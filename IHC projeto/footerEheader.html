@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header e Footer</title>
     <link rel="stylesheet" href="footerEheader.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
     <header>
         <!-- Logo com imagem -->
         <div class="logo">
-            <img src="/img/unnamed.jpg" alt="Logo Formo Search">
+            <img src="/img/Logo.jpg" alt="Logo Formo Search">
         </div>
         <nav>
             <ul>
@@ -26,7 +27,56 @@
     <!-- Conteúdo Principal -->
     <main>
         <h1>Bem-vindo ao Formo Search!</h1>
-        <p>Colocar cards com explicações</p>
+
+        <!-- Cards com explicações -->
+        <div class="container my-5">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/img/Brasil API.jpg" class="card-img-top" alt="Card 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Brasil API</h5>
+                            <p class="card-text">O projeto da Brasil API experimental tem como objetivo centralizar e disponibilizar endpoints modernos com baixíssima latência 
+                                independente de sua fonte. Acesso programático de informações é algo fundamental na comunicação entre sistemas, mas, para nossa surpresa, uma 
+                                informação tão útil e pública quanto um CEP não consegue ser acessada diretamente por um navegador por conta da API dos Correios não possuir CORS 
+                                habilitado.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/img/Banco.jpg" class="card-img-top" alt="Card 2">
+                        <div class="card-body">
+                            <h5 class="card-title">API Banco</h5>
+                            <p class="card-text">Trás como saída informações sobre sistemas bancários de todos os bancos do brasil facilitando encontrar certos tipos de informações, 
+                                também busca informações a respeito do banco a partir de um código.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/img/CEP.jpg" class="card-img-top" alt="Card 3">
+                        <div class="card-body">
+                            <h5 class="card-title"> API CEP</h5>
+                            <p class="card-text">O principal objetivo da API é trazer a facilidade da busca por CEP com múltiplos providers de fallback. Utiliza-se como fonte 
+                                principal o OpenCep, caso não encontre o CEP é buscado em diversos outros providers de CEP.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/img/CNPJ.png" class="card-img-top" alt="Card 4">
+                        <div class="card-body">
+                            <h5 class="card-title">API CNPJ</h5>
+                            <p class="card-text">A API Minha Receita tem como foco buscar por CNPJs brasileiros ativados e desativados. O Cadastro Nacional da Pessoa Jurídica é um 
+                                número único que identifica uma pessoa jurídica e outros tipos de arranjo jurídico sem personalidade jurídica junto à Receita Federal.O Cadastro 
+                                Nacional da Pessoa Jurídica é um número único que identifica uma pessoa jurídica e outros tipos de arranjo jurídico sem personalidade jurídica junto 
+                                à Receita Federal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Footer -->
@@ -47,5 +97,8 @@
         </div>
     </footer>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
