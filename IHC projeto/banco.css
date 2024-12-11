@@ -1,91 +1,106 @@
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    background-color: #004e92;
-    padding: 20px;
-    color: white;
-    text-align: center;
+  background-color: #004e92;
+  padding: 20px;
+  color: white;
+  text-align: center;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
 }
 
 nav ul li {
-    margin: 0 15px;
+  margin: 0 15px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2em;
-    font-weight: 600;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
 }
 
 h1 {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 2em;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 2em;
 }
 .search-container {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center; 
-    margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .search-container p {
-    font-size: 1.2em;
-    margin-bottom: 10px;
+  font-size: 1.2em;
+  margin-bottom: 10px;
 }
 .search-form {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .search-form input {
-    padding: 10px;
-    font-size: 1em;
-    border: 2px solid #004e92;
-    border-radius: 5px;
-    width: 300px;
+  padding: 10px;
+  font-size: 1em;
+  border: 2px solid #004e92;
+  border-radius: 5px;
+  width: 300px;
 }
 
 .search-form button {
-    padding: 10px 20px;
-    font-size: 1em;
-    background-color: #004e92;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    margin-left: 10px;
-    cursor: pointer;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #004e92;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
 .search-form button:hover {
-    background-color: #003b73;
+  background-color: #003b73;
 }
 
-
 .logo img {
-    font-size: 2em;
-    font-weight: bold;
-    letter-spacing: 2px;
-    color: #f1c40f; 
-    text-transform: uppercase;
-    width: 150px; 
-    height: auto; 
-    border-radius: 20px;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #f1c40f;
+  text-transform: uppercase;
+  width: 150px;
+  height: auto;
+  border-radius: 20px;
+}
 
+.bank-info {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #eaf7ff;
+  border: 1px solid #004e92;
+  border-radius: 5px;
+  max-width: 500px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.error-message {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.2em;
+  color: red;
 }

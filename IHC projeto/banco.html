@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pesquisa de Banco</title>
-    <link rel="stylesheet" href="banco.css"> 
+    <link rel="stylesheet" href="banco.css">
 </head>
 <body>
     <header>
@@ -24,12 +24,24 @@
     <main>
         <h1>Pesquisa de Bancos</h1>
         <div class="search-container">
-            <p>Digite o Banco para consultar as informações:</p>
-            <form action="#" method="get" class="search-form">
-                <input type="text" id="cep" name="cep" placeholder="Digite o CEP" required>
+            <p>Digite o código do banco para consultar as informações:</p>
+            <form id="search-form" class="search-form">
+                <input type="text" id="bank-code" name="bankCode" placeholder="Digite o código do banco" required>
                 <button type="submit">Pesquisar</button>
             </form>
         </div>
-    </main>    
+        <div id="bank-info" class="bank-info" style="display:none;">
+            <h2>Informações do Banco</h2>
+            <p><strong>ISPB:</strong> <span id="ispb"></span></p>
+            <p><strong>Nome:</strong> <span id="name"></span></p>
+            <p><strong>Código:</strong> <span id="code"></span></p>
+            <p><strong>Nome Completo:</strong> <span id="full-name"></span></p>
+        </div>
+        <div id="error-message" class="error-message" style="display:none; color:red;">
+            <p>Não foi possível encontrar o banco. Verifique o código informado.</p>
+        </div>
+    </main>
+    
+    <script src="/js/banco.js"></script>
 </body>
 </html>

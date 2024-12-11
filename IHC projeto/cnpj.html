@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pesquisa de CNPJ</title>
-    <link rel="stylesheet" href="cnpj.css"> 
+    <link rel="stylesheet" href="cnpj.css">
 </head>
 <body>
     <header>
@@ -25,11 +25,24 @@
         <h1>Pesquisa de CNPJ</h1>
         <div class="search-container">
             <p>Digite o CNPJ para consultar as informações:</p>
-            <form action="#" method="get" class="search-form">
-                <input type="text" id="cep" name="cep" placeholder="Digite o CEP" required>
+            <form id="search-form" class="search-form">
+                <input type="text" id="cnpj" name="cnpj" placeholder="Digite o CNPJ" required>
                 <button type="submit">Pesquisar</button>
             </form>
         </div>
-    </main>    
+        <div id="cnpj-info" class="cnpj-info" style="display:none;">
+            <h2>Informações do CNPJ</h2>
+            <p><strong>Razão Social:</strong> <span id="razao-social"></span></p>
+            <p><strong>Nome Fantasia:</strong> <span id="nome-fantasia"></span></p>
+            <p><strong>Situação Cadastral:</strong> <span id="situacao-cadastral"></span></p>
+            <p><strong>Data de Abertura:</strong> <span id="data-abertura"></span></p>
+            <p><strong>Endereço:</strong> <span id="endereco"></span></p>
+        </div>
+        <div id="error-message" class="error-message" style="display:none; color:red;">
+            <p>Não foi possível encontrar o CNPJ. Verifique o número informado.</p>
+        </div>
+    </main>
+    
+    <script src="/js//cnpj.js"></script>
 </body>
 </html>

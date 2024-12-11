@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pesquisa de CEP</title>
-    <link rel="stylesheet" href="cep.css"> 
+    <link rel="stylesheet" href="cep.css">
 </head>
 <body>
     <header>
@@ -25,12 +25,24 @@
         <h1>Pesquisa de CEP</h1>
         <div class="search-container">
             <p>Digite o CEP para consultar as informações:</p>
-            <form action="#" method="get" class="search-form">
+            <form id="search-form" class="search-form">
                 <input type="text" id="cep" name="cep" placeholder="Digite o CEP" required>
                 <button type="submit">Pesquisar</button>
             </form>
         </div>
-    </main>    
+        <div id="cep-info" class="cep-info" style="display:none;">
+            <h2>Informações do CEP</h2>
+            <p><strong>CEP:</strong> <span id="cep-value"></span></p>
+            <p><strong>Estado:</strong> <span id="state"></span></p>
+            <p><strong>Cidade:</strong> <span id="city"></span></p>
+            <p><strong>Bairro:</strong> <span id="neighborhood"></span></p>
+            <p><strong>Rua:</strong> <span id="street"></span></p>
+        </div>
+        <div id="error-message" class="error-message" style="display:none; color:red;">
+            <p>Não foi possível encontrar o CEP. Verifique o número informado.</p>
+        </div>
+    </main>
+    
+    <script src="/js/cep.js"></script>
 </body>
 </html>
-
